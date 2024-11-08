@@ -1,4 +1,5 @@
 import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
@@ -42,5 +43,13 @@ public class MainPage {
     @Step("Проверка отображения заголовка 'Ветвление' на странице")
     public boolean isVisiblePreviewBranch(){
         return textPreviewBranch.shouldBe(visible, Duration.ofSeconds(15)).isDisplayed();
+    }
+
+    /**
+     * Скролл до элемента 'Ветвление' в содержании
+     */
+    @Step("Скролл до элемента 'Ветвление' в содержании")
+    public void scrollContentBranch(){
+        linkMenuBranch.scrollTo();
     }
 }

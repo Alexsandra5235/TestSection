@@ -1,3 +1,3 @@
 public interface Constants {
-    public final String url = "https://blog.skillfactory.ru/glossary/selenium/";
+    public final String url = "https://skillbox.ru/media/code/osnovnye-komandy-dlya-raboty-s-git-i-github/";
 }
